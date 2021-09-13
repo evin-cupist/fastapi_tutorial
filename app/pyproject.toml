@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["ske-kr <54828276+ske-kr@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^6.2.5"
+fastapi = "^0.68.1"
+pytest-cov = "^2.12.1"
+pydantic = "^1.8.2"
+python-multipart = "^0.0.5"
+SQLAlchemy = "^1.4.23"
+fastapi-login = "^1.6.3"
+uvicorn = "^0.15.0"
+Inject = "^4.3.1"
+python-jose = "^3.3.0"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+poetry-dotenv-plugin = "^0.1.0-alpha.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+omit=[
+    "/Users/kwangeunson/PycharmProjects/fastapi_DDD/venv/*"
+]
